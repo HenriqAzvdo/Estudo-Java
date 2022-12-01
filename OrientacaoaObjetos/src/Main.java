@@ -39,8 +39,8 @@ public class Main {
         double pY = (y.a + y.b + y.c) / 2.0;
         double areaY = Math.sqrt( pY * ( pY - y.a ) * ( pY - y.b ) * ( pY - y.c ));
 */
-        double areaX = areaTriangle(x.a, x.b, x.c);
-        double areaY = areaTriangle(y.a, y.b, y.c);
+        double areaX = x.area();
+        double areaY = y.area();
 
         System.out.printf("Área do triângulo x: %.4f%n", areaX);
         System.out.printf("Área do triângulo y: %.4f%n", areaY);
@@ -58,13 +58,13 @@ public class Main {
     }
 
     //Funções
-
+/*
     public static double areaTriangle(double ladoA, double ladoB, double ladoC) {
         double p = (ladoA + ladoB + ladoC) / 2.0;
         double area = Math.sqrt( p * (p - ladoA) * (p - ladoB) * (p - ladoC));
         return area;
     }
-
+*/
     public static char max(double areax, double areay) {
         char aux;
         if (areax > areay) {
