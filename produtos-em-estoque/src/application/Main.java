@@ -20,6 +20,11 @@ public class Main {
 
         //como temos um constructor, como o valor não pode ser vazio, precisa inserir os dados antes de instanciar a classe
         Product p = new Product(name, price); //ativa o construtor
+        p.setName("TV");
+        System.out.println();
+        System.out.println("Update name: " + p.getName());
+        p.setPrice(1000.00);
+        System.out.println("Update price: " + p.getPrice());
         System.out.println("Product data: " + p);
 
         System.out.println("Enter the number of products to be added in stock: ");
