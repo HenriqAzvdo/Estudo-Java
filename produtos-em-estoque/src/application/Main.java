@@ -11,16 +11,15 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Product p = new Product();
-
-
         System.out.println("Name: ");
-        p.name = sc.next();
+        String name = sc.next();
         System.out.println("Price: ");
-        p.price = sc.nextDouble();
+        Double price = sc.nextDouble();
         System.out.println("Quantity: ");
-        p.quantity = sc.nextInt();
+        Integer quantity = sc.nextInt();
 
+        //como temos um constructor, como o valor não pode ser vazio, precisa inserir os dados antes de instanciar a classe
+        Product p = new Product(name, price, quantity);
         System.out.println("Product data: " + p);
 
         System.out.println("Enter the number of products to be added in stock: ");
@@ -32,8 +31,6 @@ public class Main {
         quant = sc.nextInt();
         p.removeProducts(quant);
         System.out.println("Update data: " + p);
-
-
 
     }
 }
