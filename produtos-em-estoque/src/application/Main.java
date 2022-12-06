@@ -21,14 +21,17 @@ public class Main {
         System.out.println("Quantity: ");
         p.quantity = sc.nextInt();
 
-        System.out.println("Product data: " +p.name+ ", $ " +p.price+ ", " +p.quantity+ " units, Total: $ " +p.totalValueInStock());
+        System.out.println("Product data: " + p);
 
         System.out.println("Enter the number of products to be added in stock: ");
         int quant = sc.nextInt();
         p.addProducts(quant);
-        System.out.println("Product data: " +p.name+ ", $ " +p.price+ ", " +p.quantity+ " units, Total: $ " +p.totalValueInStock());
+        System.out.println("Update data: " + p);
 
-
+        System.out.println("Enter the number of products to be removed from stock: ");
+        quant = sc.nextInt();
+        p.removeProducts(quant);
+        System.out.println("Update data: " + p);
 
 
 
