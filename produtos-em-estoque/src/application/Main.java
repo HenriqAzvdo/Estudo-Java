@@ -15,8 +15,7 @@ public class Main {
         String name = sc.next();
         System.out.println("Price: ");
         Double price = sc.nextDouble();
-       // System.out.println("Quantity: ");
-        //Integer quantity = sc.nextInt();
+
 
         //como temos um constructor, como o valor não pode ser vazio, precisa inserir os dados antes de instanciar a classe
         Product p = new Product(name, price); //ativa o construtor

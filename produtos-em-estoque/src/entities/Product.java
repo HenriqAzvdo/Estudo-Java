@@ -37,6 +37,7 @@ public class Product {
     public Integer getQuantity() {
         return quantity;
     }
+
     //Método
     public Double totalValueInStock() {
         return price * quantity;
